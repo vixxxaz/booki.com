@@ -266,7 +266,7 @@
     .city {
         background-color: #F2F2F2;
         flex: 2;
-        /*determine la largeur des blocs heberg et pop*/
+        /*determine 2 fois la largeur  de hebergement par rapport a populaire*/
         border-radius: 20px;
         margin-right: 20px;
     }
@@ -326,7 +326,7 @@
     /* popular*/
     
     .icon-popu {
-        margin-left: 170px;
+        margin-left: 236px;
     }
     
     .popular {
@@ -412,7 +412,6 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-content: space-between;
-        /* justify-content: space-between;*/
         height: 496px;
         margin-top: 30px;
         margin-bottom: 100px;
@@ -436,7 +435,6 @@
     .activ:hover {
         cursor: pointer;
         box-shadow: 0 9px 20px rgba(0, 0, 0, 0.3);
-        /*color: #0065fc;*/
     }
     
     .titre-section {
@@ -493,7 +491,6 @@
     
     .bloc-foot {
         display: flex;
-        /*max-width: 100%;*/
         padding: 0 28px;
     }
     
@@ -583,6 +580,7 @@
         .btnsearch {
             border-top: 1px solid #deebff;
             border-bottom: 1px solid #deebff;
+            width: -moz-fit-content;
             width: fit-content;
             border-radius: 18px;
             margin-left: 5px;
@@ -602,7 +600,7 @@
         }
         /* appart popular */
         .icon-popu {
-            margin-left: 188px;
+            margin-left: 202px;
         }
         .popular {
             padding: 5px;
@@ -691,6 +689,7 @@
             background-color: white;
             border-radius: 1.25rem;
             box-shadow: 0 0 16px #0000002e;
+            width: -moz-fit-content;
             width: fit-content;
             margin-bottom: 36px;
             margin-left: 24px;
@@ -860,5 +859,34 @@
             background-color: #F2F2F2;
             width: 1440px;
             margin-left: -43px;
+        }
+    }
+    
+    @media only screen and (max-width: 320px) {
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 91px;
+        }
+        .nav-list {
+            display: flex;
+            margin-left: 112px;
+        }
+        .activ-siz {
+            width: 207px;
+        }
+        footer {
+            width: 435px;
+            background-color: #F2F2F2;
+            margin-left: -10px;
+        }
+        .popular {
+            padding: 5px;
+            border-radius: 0;
+            background-color: #F2F2F2;
+            width: 439px;
+            margin-left: -13px;
         }
     }
