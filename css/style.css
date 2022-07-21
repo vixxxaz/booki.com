@@ -33,7 +33,7 @@
         color: inherit;
     }
     
-    #logo {
+    .logo {
         margin-right: auto;
         height: 50px;
         width: 120px;
@@ -875,7 +875,7 @@
             margin-left: 112px;
         }
         .activ-siz {
-            width: 207px;
+            width: 100%;
         }
         footer {
             width: 435px;
